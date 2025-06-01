@@ -1,0 +1,54 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to bottom, #1a1a1a, #333);
+    color: white;
+}
+
+.container {
+    height: 50%;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFD700;
+    text-align: center;
+}
+
+.command-input {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    width: 60%;
+    max-width: 400px;
+    background-color: #222;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    border-radius: 0.5rem;
+    outline: none;
+    text-align: center;
+    caret-color: #FFD700;
+    transition: border-color 0.3s;
+}
+
+.command-input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.command-input:focus {
+    border-color: #4CAF50;
+    background-color: #111;
+}
